@@ -2,6 +2,7 @@ import React from 'react'
 import Image from '../Components/Image';
 import { Link } from "react-router-dom";
 import PostMenuAction from './../components/PostMenuAction';
+import Search from './../components/Search';
 
 
 const SinglePostPage= ()=>{
@@ -34,10 +35,22 @@ const SinglePostPage= ()=>{
         </div>
       </div>
       {/* content */}
-      <div className='flex flex-col md:flex-row gap-8'>
+      <div className='flex flex-col md:flex-row gap-12'>
         {/* text */}
         <div className='lg:text-lg flex flex-col gap-6 text-justify'>
-
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Incidunt nobis architecto deserunt itaque error neque,
@@ -47,6 +60,74 @@ const SinglePostPage= ()=>{
              Incidunt nobis architecto deserunt itaque error neque,
               quaerat, dolore ipsa velit numquam, 
               lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! Nulla corporis laboriosam, ad magnam minima at architecto.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Incidunt nobis architecto deserunt itaque error neque,
+              quaerat, dolore ipsa velit numquam, 
+              lectus facere! 
+              Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Minus dolorum, molestias repellendus deleniti enim necessitatibus nisi commodi debitis nulla veniam aliquam perspiciatis suscipit? 
+             officiis f
           </p>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing 
@@ -56,16 +137,18 @@ const SinglePostPage= ()=>{
         </div>
         {/* menu */}
         <div className='px-4 h-max sticky top-8'>
-          <h1>Author</h1>
-          <div className=''>
+          <h1 className=' mb-4 text-sm font-medium'>Author</h1>
+          <div className="flex flex-col gap-4">
+          <div className='flex items-center gap-8'>
           <Image 
             src="/userImg.jpeg" 
             className="w-12 h-12 rounded-full object-cover"
             w="48"
             h="48"
             />
-          <Link>JOJO Deo</Link>
-          <p>Lorem ipsum, dolor sit amet consectetur.</p>
+          <Link className='text-blue-800'>JOJO Deo</Link>
+          </div>
+          <p className='text-sm text-gray-500'>Lorem ipsum, dolor sit amet consectetur.</p>
           <div className='flex gap-2'>
             <Link>
               <Image src="/facebook.svg"/>
@@ -75,8 +158,9 @@ const SinglePostPage= ()=>{
             </Link>
           </div>
           </div>
+          
           <PostMenuAction />
-          <h1>Categories</h1>
+          <h1 className='mt-8 mb-4 text-sm font-medium'>Categories</h1>
           <div className="flex flex-col gap-2 text-sm">
             <Link className='underline' to="/">All</Link>
             <Link className='underline' to="/">Web Dev</Link>
@@ -85,7 +169,8 @@ const SinglePostPage= ()=>{
             <Link className='underline' to="/">Search Engines</Link>
             <Link className='underline' to="/">Marketing</Link>
           </div>
-          <h1>Search</h1>
+          <h1 className='mt-8 mb-4 text-sm font-medium'>Search</h1>
+          <Search />
         </div>
       </div>
     </div>
