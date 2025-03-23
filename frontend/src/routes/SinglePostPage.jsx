@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from '../Components/Image';
 import { Link } from "react-router-dom";
+import PostMenuAction from './../components/PostMenuAction';
 
 
 const SinglePostPage= ()=>{
@@ -74,6 +75,17 @@ const SinglePostPage= ()=>{
             </Link>
           </div>
           </div>
+          <PostMenuAction />
+          <h1>Categories</h1>
+          <div className="flex flex-col gap-2 text-sm">
+            <Link className='underline' to="/">All</Link>
+            <Link className='underline' to="/">Web Dev</Link>
+            <Link className='underline' to="/">Development</Link>
+            <Link className='underline' to="/">Databases</Link>
+            <Link className='underline' to="/">Search Engines</Link>
+            <Link className='underline' to="/">Marketing</Link>
+          </div>
+          <h1>Search</h1>
         </div>
       </div>
     </div>
