@@ -3,6 +3,7 @@ import Image from '../Components/Image';
 import { Link } from "react-router-dom";
 import PostMenuAction from './../components/PostMenuAction';
 import Search from './../components/Search';
+import Comments from './../components/Comments';
 
 
 const SinglePostPage= ()=>{
@@ -173,6 +174,7 @@ const SinglePostPage= ()=>{
           <Search />
         </div>
       </div>
+      <Comments/>
     </div>
   )
 }
