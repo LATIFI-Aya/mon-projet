@@ -18,9 +18,14 @@ const postSchema = new Schema ({
     },
     slug: {
         type: String,
+        required: true,
         unique: true,
     },
     desc:{
+        type: String,
+        default: "general",
+    },
+    category:{
         type: String,
     },
     content: {
